@@ -60,7 +60,7 @@ Este guia descreve o processo de configuração do ambiente de desenvolvimento J
 1. No Github vá até repositórios e clique em **New** para criar um novo repositório.
 2. Nomeie o novo repositório como: **dio-java-basico**.
 3. Selecione a opção **Public** (para deixar seu reositório puclico).
-4. Selecione a opção **add a README file**
+4. Selecione a opção **add a README file** e crie uma mensagem: **Repositorio para armazenar todo conteudo do curso de Java Basico**.
 5. Selecione a opção **Gitignore** e escolha a opção **Java**.
 6. Clique em **Create a repository**
 <br>
@@ -74,7 +74,7 @@ O objetivo é integrar de forma automatizada o repositório local com o reposit�
 5. Na barra de busca superior irá aparecer: **Entrar com Github**, clique.
 6. O sistema irá direcionar para o Github, siga as instruções para finalizar a sincronização.
 
-### Passo 3: Clonando repositorio remoto no ambiente local**
+### Passo 3: **Clonando repositorio remoto no ambiente local**
 1. No Vs code aperte **ctrl** + **Shift** + **P**
 2. Clique em **git clone**
 3. Confirme que deseja clonar. 
@@ -82,9 +82,23 @@ O objetivo é integrar de forma automatizada o repositório local com o reposit�
 5. No Vs ele irá mostrar os repositórios, clique em **dio-java-basico**. 
 6. Automaticamente ele irá abrir o windows, escolha um local de sua preferencia e crie uma pasta nomeada como **Dio**, ou um nome de sua preferência. (todo o conteudo ficará nesta pasta). Selecione a pasta.
 7. Automaticamente após a seleção, na parte inferior do VSCode o Git irá perguntar se deseja abrir o repositório clonado, clique em **sim**
+8. Pronto, o repositório irá aparecer no ambiente local.
+
+### Passo 4: **Alterando arquivo local e enviando um commit para o repositório remoto**
+1. Na pasta **Readme** inclua a mensagem: **Alterando o conteudo de um arquivo de forma local**.
+2. Na coluna da lateral esquerda o Git ja irá sinalizar uma alteração, clique.
+3. Na mensagem, escreva: **Meu primeiro commmit**.
+4. Clique em **Commit** e depois confirme a sincronização.
+5. Vá até o ambiente remoto e confirme o commit feito.
 
 
-
+### Passo 5: **Criando um projeto Java**
+1. Tecle **Ctrl** + **Shift** + **P**
+2. Clique em **Create a Java Project**.
+3. Selecione a opção: **No build tools**
+4. Ele já irá direcionar para o diretorio clonado. Selecione e confirme.
+5. Na barra superior, coloque o nome do projeto: **Meu-primeiro-projeto-java**. Ele irá abrir uma nova janela, feche a anterior se isso acontecer.
+6. Ele ja irá criar a seguinte estrutura de diretórios:
    ```
    - .vscode/
    - bin/
@@ -93,6 +107,20 @@ O objetivo é integrar de forma automatizada o repositório local com o reposit�
      - App.java
    - README.md
    ```
+7. Clique em: **App.java**, ele deve apresentar o seguinte código: 
+ ```
+public class App {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+ ```
+ 8. Altere a mensagem **Hello world** para: **Boas Vindas turma DIO**
+ 9. Na própria tela você irá encontrar a palavra **Run**, clique. 
+ 10. Novamente na coluna da lateral esquerda o Git ja irá sinalizar uma alteração, clique.
+ 11. Na mensagem, escreva: **Meu primeiro projeto java**.
+ 12. Clique em **Commit** e depois confirme a sincronização.
+ 5. Vá até o ambiente remoto e confirme a inclusão da nova pasta e arquivo relacionado ao projeto.
 
 
 
